@@ -102,6 +102,14 @@ describe('App', () => {
     expect(document.getElementById('panel-chat')).toHaveAttribute('hidden')
   })
 
+  it('should link to the GitHub repository from the sidebar', () => {
+    renderApp()
+
+    const link = screen.getByRole('link', { name: /GitHub/ })
+    expect(link).toHaveAttribute('href', 'https://github.com/teddylee777/fastcampus-jev')
+    expect(link).toHaveAttribute('target', '_blank')
+  })
+
   it('should move between tabs with the arrow keys', async () => {
     const user = userEvent.setup()
     renderApp()

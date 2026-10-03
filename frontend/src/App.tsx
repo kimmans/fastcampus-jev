@@ -5,6 +5,7 @@ import { PATTERNS } from './patterns/config'
 import './App.css'
 
 const CHAT_TAB = 'chat'
+const REPO_URL = 'https://github.com/teddylee777/fastcampus-jev'
 const TABS = [
   { id: CHAT_TAB, title: '고객지원 에이전트', group: '샘플 프로젝트' },
   ...PATTERNS.map((pattern) => ({ id: pattern.id, title: pattern.title, group: pattern.group })),
@@ -69,6 +70,15 @@ export default function App() {
             </div>
           ))}
         </div>
+        <a
+          className="repo-link"
+          href={REPO_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub 저장소 (새 창)"
+        >
+          GitHub
+        </a>
         <p className="sidebar-foot">판단은 Jev 에게, 말은 LLM 에게</p>
       </nav>
 

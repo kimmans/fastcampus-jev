@@ -12,7 +12,7 @@
 ![React](https://img.shields.io/badge/React-19-61dafb)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-[빠른 시작](#빠른-시작-quick-start) · [앱 둘러보기](#앱-둘러보기) · [동작 구조](#동작-구조) · [노트북](#노트북) · [참고 자료](#참고-자료)
+[GitHub](https://github.com/teddylee777/fastcampus-jev) · [빠른 시작](#빠른-시작-quick-start) · [앱 둘러보기](#앱-둘러보기) · [동작 구조](#동작-구조) · [노트북](#노트북) · [참고 자료](#참고-자료)
 
 </div>
 
@@ -34,7 +34,9 @@ Jev 는 TypeSafe 가 2026년 9월에 공개한 판단 전용 모델입니다. �
 
 준비물은 Python 3.12, [uv](https://docs.astral.sh/uv/), Node.js 20 이상, 그리고 [OpenRouter API 키](https://openrouter.ai/settings/keys)입니다. Jev 는 선불 크레딧이 있는 계정에서만 호출됩니다.
 
-### 1. 설치
+### 1. 저장소 클론과 설치
+
+[GitHub 저장소](https://github.com/teddylee777/fastcampus-jev)를 clone 받아 그 폴더에서 시작합니다. 아래 명령은 저장소를 내려받고, 파이썬 패키지를 설치하고, 환경 변수 파일을 만듭니다.
 
 ```bash
 git clone https://github.com/teddylee777/fastcampus-jev.git
@@ -44,6 +46,8 @@ cp .env.example .env
 ```
 
 `.env` 를 열어 `OPENROUTER_API_KEY` 에 발급받은 키를 넣습니다.
+
+Git 이 없으면 저장소 페이지의 **Code → Download ZIP** 으로 받아 압축을 풀고, 그 폴더에서 `uv sync` 부터 이어 갑니다. 이미 clone 받은 저장소를 최신으로 맞추려면 `git pull` 뒤에 `uv sync` 를 다시 실행합니다.
 
 ### 2. 앱 실행
 

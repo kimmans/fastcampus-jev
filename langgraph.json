@@ -1,0 +1,12 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "support": "./jev_agent/agent.py:make_graph",
+    "guardrail_lab": "./jev_agent/pattern_graphs.py:make_guardrail_lab",
+    "compaction": "./jev_agent/pattern_graphs.py:make_compaction",
+    "tool_gate": "./jev_agent/pattern_graphs.py:make_tool_gate",
+    "routing": "./jev_agent/pattern_graphs.py:make_routing",
+    "browser_action": "./jev_agent/pattern_graphs.py:make_browser_action"
+  },
+  "env": ".env"
+}
